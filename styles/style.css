@@ -42,3 +42,9 @@ p {
     width: 50px;
     max-height: 50px;
 }
+
+.aside {
+    padding: 5%;
+    margin: .1%;
+    align-items: center;
+}
