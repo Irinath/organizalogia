@@ -37,3 +37,8 @@ p {
     width: 600px;
     height: max-content;
 }
+
+.logo {
+    width: 50px;
+    max-height: 50px;
+}
