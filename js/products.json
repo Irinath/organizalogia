@@ -1,0 +1,20 @@
+[
+    {
+    "id":  "0001",
+    "ISBN": 9789878220062, 
+    "name": "Hábitos átomicos",
+    "autor": "CLEAR, JAMES",
+    "price": 27900.00,
+    "description": "UN METODO SENCILLO Y COMPROBADO PARA DESARROLLAR BUENOS HABITOS Y ELIMINAR LOS MALOS." ,
+    "image":  "./image/products/atomics_habits.jpg"
+},
+    {
+    "id":  "0002",
+    "ISBN": 9789878220062, 
+    "name": "Hábitos átomicos",
+    "autor": "CLEAR, JAMES",
+    "price": 27900.00,
+    "description": "UN METODO SENCILLO Y COMPROBADO PARA DESARROLLAR BUENOS HABITOS Y ELIMINAR LOS MALOS." ,
+    "image":  "./image/products/atomics_habits.jpg"
+}
+]
