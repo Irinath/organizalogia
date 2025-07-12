@@ -17,21 +17,24 @@
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: "Fuzzy Bubble", cursive;
-    font-style: italic;
+    font-family: "Fuzzy Bubbles";
+    /*font-style: italic;*/
+    font-size: 1.333rem;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
-    background: linear-gradient(to right, var(--color-primary) 0 20%, var(--color-accent));
+    background: linear-gradient(to right, var(--color-primary) 0 40%, var(--color-accent) 55% 100%);
     -webkit-background-clip: text;
     color: transparent;
+    font-weight: 600;
 }
 
 p {
     text-align: center;
-    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
 }
 
 .image1 {
@@ -48,4 +51,31 @@ p {
     padding: 5%;
     margin: .1%;
     align-items: center;
+}
+
+ul .navbar {
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.carrousel {
+    position: relative;
+    width: 600px;
+    /* ajusta según necesidad */
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrousel-image {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carrousel-image.active {
+    opacity: 1;
 }
