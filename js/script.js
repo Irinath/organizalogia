@@ -1,5 +1,5 @@
 let current = 0;
-const images = document.querySelectorAll('.carousel-image');
+const images = document.querySelectorAll('.carrousel-image');
 const total = images.length;
 
 function showNextImage() {
@@ -8,5 +8,5 @@ function showNextImage() {
     images[current].classList.add('active');
 }
 
-// Cambia cada 3 segundos (3000 ms)
-setInterval(showNextImage, 3000);
+// Cambia cada 5 segundos (5000 ms)
+setInterval(showNextImage, 5000);
