@@ -53,10 +53,20 @@ p {
     font-style: oblique;
 }
 
-a, .navbar {
-    list-style-type: none;
+a {
+    padding: 5px;
     text-decoration: none;
     color: var(--color-text);
+}
+
+.navbar{
+    border: 2px #a6c2c8 solid;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: .5%;
 }
 
 .image1 {
@@ -93,4 +103,38 @@ a, .navbar {
 
 .carrousel-image.active {
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .750rem;
+}
+
+h1 {font-size: 2.6rem; }
+
+h2 {font-size: 1.9rem; }
+
+h3 {font-size: 18px; }
+
+h4 {font-size: 16px; }
+
+h5 {font-size: 14px; }
+
+small {font-size: 0.750rem; }
+
+.carrousel {
+    position: relative;
+    width: 450px;
+    /* ajusta según necesidad */
+    height: 300px;
+    overflow: hidden;
+}
+
 }

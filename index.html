@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Organizalogía</title>
 </head>
@@ -22,27 +22,32 @@
         <img src="./images/logo1.png" alt="marcador" class="logo">
         <h1>Organizalogía</h1>
         <P>Te ayudamos a organizar cada momento de tú día.</P>
-        <div class="carrousel">
-        <img src="./images/planner.jpg" alt="agenda con pegatinas" class="carrousel-image active">
-        <img src="./images/How-to-Create-a-Kanban-Board-for-Any-Project.jpg" alt="kanban" class="carrousel-image">
-        <img src="./images/3-years-bullet-journaling-and-finally-read-the-bullet-v0-c91opican2oe1.webp" alt="agenda" class="carrousel-image">
-        </div>
     </header>
     <nav>
         <ul class="navbar">
             <li><a href="#">Inicio</a></li>
-            <il><a href="#about">Sobre nosotros</a></il>
-            <il><a href="#metodos">Métodos</a></il>
-            <il><a href="#carrito">Pedidos</a></il>
-            <il><a href="#libros">Libros recomendados</a></il>
-            <il><a href="#articulos">Árticulos de apoyo</a></il>
-            <il><a href="#contacto">Contacto</a></il>
+            <li><a href="#about">Sobre nosotros</a></li>
+            <li><a href="#metodos">Métodos</a></li>
+            <li><a href="#videos">Videología</a></li>
+            <li><a href="#carrito">Pedidos</a></li>
+            <li><a href="#libros">Libros recomendados</a></li>
+            <li><a href="#articulos">Árticulos de apoyo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+    <div class="carrousel">
+        <img src="./images/carrousel/planner.jpg" alt="agenda con pegatinas" class="carrousel-image active">
+        <img src="./images/carrousel/Scrum1.jpg" alt="Scrum" class="carrousel-image">
+        <img src="./images/carrousel/agenda1.jpg" alt="agenda" class="carrousel-image">
+        <img src="./images/carrousel/agenda2.jpg" alt="agenda" class="carrousel-image">
+        <img src="./images/carrousel/todolist.jpg" alt="lista de tareas" class="carrousel-image">
+    </div>
+
     <main>
         <section class="productos"></section>
-        <section class="contacto-form" id="contacto">
-            <form action="https://formspree.io/f/myzjrgbn" method="POST">
+        <section class="contacto-form" id="contacto">Contactanos
+            <form action="" method="post">
+            <!--form action="https://formspree.io/f/myzjrgbn" method="POST"-->
                 <label for="nombre">Nombres </label>
                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tus Nombres"> <br>
                 <label for="apellido">Apellidos </label>
@@ -53,7 +58,7 @@
                 <input type="mail" name="mail" id="mail" placeholder="mail@mail.com"> <br>
                 <label for="mensaje">Escribinos </label>
                 <textarea rows="6" name="escribenos" id="mensaje" placeholder="Mensaje o Comentarios"></textarea> <br>
-                <button type="submit">Send</button>
+                <button type="submit" value="Save">Send</button>
             </form>
         </section>
         <aside class="aside">
