@@ -59,6 +59,12 @@ a {
     color: var(--color-text);
 }
 
+a:hover {
+    border: 5px var(--color-accent);
+    border-radius: 8px;
+    border-inline: solid;
+}
+
 .navbar{
     border: 2px #a6c2c8 solid;
     position: sticky;
@@ -66,7 +72,7 @@ a {
     justify-content: space-evenly;
     list-style-type: none;
     flex-wrap: wrap;
-    padding: .5%;
+    padding: 10px;
 }
 
 .image1 {
@@ -103,6 +109,12 @@ a {
 
 .carrousel-image.active {
     opacity: 1;
+}
+
+.contacto-form {
+    margin: 2px;
+    padding: .1%;
+    align-content:space-between;
 }
 
 @media only screen and (max-width: 600px) {
