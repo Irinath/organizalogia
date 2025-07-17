@@ -1,0 +1,69 @@
+let edad = prompt("ingrese la edad");
+edad = parseInt(edad);
+let esVip = true;
+
+if (edad >= 18 && esVip) {
+    console.log("Ingresa al salón VIP");
+} else if (edad >= 18) {
+    console.log("Ingresa al salón común");
+} else { console.log("No puede ingresar"); }
+
+//Filtrar productos con descuento
+let productos = [
+        {
+    "id":  "AA001",
+    "ISBN": 9789878220062, 
+    "name": "Hábitos átomicos",
+    "autor": "CLEAR, JAMES",
+    "price": 27900.00,
+    "description": "UN METODO SENCILLO Y COMPROBADO PARA DESARROLLAR BUENOS HABITOS Y ELIMINAR LOS MALOS." ,
+    "image":  "./image/products/atomics_habits.jpg",
+    "discount": true
+},
+    {
+    "id":  "AA002",
+    "ISBN": 9789507883774, 
+    "name": "IKIGAI",
+    "autor": "Hector Garcia / Francesc Miralles",
+    "price": 28500.00,
+    "description": "Según los japoneses, todo el mundo tiene un ikigai, un motivo para existir." ,
+    "image":  "./images/products/IKIGAI-1024-1024.jpg",
+    "discount": false
+},
+    {
+    "id":  "AA003",
+    "ISBN": 9789507883774, 
+    "name": "Los 7 Hábitos de la Gente Altamente Efectiva",
+    "autor": "Covey, Stephen R.",
+    "price": 28900.00,
+    "description": "Los 7 hábitos de la gente altamente efectiva para dar vida a una nueva generación de líderes." ,
+    "image":  "./images/products/7Habitos-1024-1024.jpg",
+    "discount": true
+},
+    {
+    "id":  "AA004",
+    "ISBN": 9786287578012, 
+    "name": "Enfócate",
+    "autor": "Newport, Cal",
+    "price": 27100.00,
+    "description": "El libro guía al lector a conseguir la concentración en tareas exigentes de la vida diaria y el trabajo." ,
+    "image":  "./images/products/enfocate.jpg",
+    "discount": false
+},
+    {
+    "id":  "AA005",
+    "ISBN": 9780698161863, 
+    "name": "Getting Things Done: The Art of Stress-Free Productivity",
+    "autor": "Allen, David",
+    "price": 29700.00,
+    "description": "Un sistema de productividad revolucionario que te enseña como gestionar efectivamente y sin estrés proyectos, tareas y compromisos" ,
+    "image":  "./images/products/gtd.jpg",
+    "discount": false
+}
+]
+
+for (let i = 0; i<productos.length; i++) {
+    if (productos[i].discount) {
+        console.log(productos[i].name + ", tiene descuento.");
+    } else { console.log(productos[i].name + ", no tiene descuento.");}
+}
