@@ -17,28 +17,56 @@
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family:  "Jost", sans-serif;
+    font-family: "Jost", sans-serif;
     /*font-style: italic;*/
 }
 
-h1, h2, h3, h4, h5, nav, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+nav,
+a {
     font-family: 'Fuzzy Bubbles';
     font-weight: 700;
 }
 
-html {font-size: 100%;} /* 16px */
+html {
+    font-size: 100%;
+}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+/* 16px */
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+h1 {
+    font-size: 4.210rem;
+    /* 67.36px */
+}
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+h4 {
+    font-size: 1.777rem;
+    /* 28.48px */
+}
 
-small {font-size: 0.750rem; /* 12px */}
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
 
 h1 {
     text-align: center;
@@ -65,7 +93,7 @@ a:hover {
     border-inline: solid;
 }
 
-.navbar{
+.navbar {
     border: 2px #a6c2c8 solid;
     position: sticky;
     display: flex;
@@ -91,6 +119,40 @@ a:hover {
     align-items: center;
 }
 
+/* Carrito de compras */
+#carrito {
+    margin-top: 20px;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#vaciar-carrito {
+    margin-top: 10px;
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    border-radius: 8px;
+    border-inline: solid;
+}
+
+/* Carousel */
 .carrousel {
     position: relative;
     width: auto;
@@ -114,39 +176,51 @@ a:hover {
 .contacto-form {
     margin: 2px;
     padding: .1%;
-    align-content:space-between;
+    align-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
-    
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-size: .750rem;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-h1 {font-size: 2.6rem; }
+    body {
+        font-size: .750rem;
+    }
 
-h2 {font-size: 1.9rem; }
+    h1 {
+        font-size: 2.6rem;
+    }
 
-h3 {font-size: 18px; }
+    h2 {
+        font-size: 1.9rem;
+    }
 
-h4 {font-size: 16px; }
+    h3 {
+        font-size: 18px;
+    }
 
-h5 {font-size: 14px; }
+    h4 {
+        font-size: 16px;
+    }
 
-small {font-size: 0.750rem; }
+    h5 {
+        font-size: 14px;
+    }
 
-.carrousel {
-    position: relative;
-    width: 450px;
-    /* ajusta según necesidad */
-    height: 300px;
-    overflow: hidden;
-}
+    small {
+        font-size: 0.750rem;
+    }
+
+    .carrousel {
+        position: relative;
+        width: 450px;
+        /* ajusta según necesidad */
+        height: 300px;
+        overflow: hidden;
+    }
 
 }
