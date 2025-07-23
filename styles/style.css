@@ -130,6 +130,7 @@ a:hover {
 }
 
 #lista-carrito li {
+    text-decoration: none;
     background-color: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
@@ -152,6 +153,71 @@ a:hover {
     border-inline: solid;
 }
 
+/*Contenedor Flex*/
+.libros-flexbox {
+    display: flex;
+}
+
+.item {
+    border: 2px solid var(--color-accent);
+    border-radius: 15px;
+}
+
+.precio {
+    font-size: x-large;
+}
+
+.oferta {
+    font-size: large;
+}
+
+.descripcion {
+    font-size: small;
+}
+
+.btn-libros {
+    /*text-align: center;
+    align-items: center;
+    padding: 3%;
+    border-radius: 8px;*/
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-background);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-libros .texto {
+    /*cursor: pointer;
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    border-radius: 8px;
+    border-inline: solid;*/
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap;
+    display: none;
+}
+
+.btn-libros:hover .icono {
+    transform: scale(1.5);
+}
+
+.btn-libros:hover .texto {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* Carousel */
 .carrousel {
     position: relative;
@@ -171,6 +237,41 @@ a:hover {
 
 .carrousel-image.active {
     opacity: 1;
+}
+
+.productos__container {
+    display: grid;
+   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Limit columns to a maximum of 4 
+    grid-template-columns: repeat(auto-fit, minmax(250px, min(1fr, 25%)));*/
+    grid-template-columns: repeat(3, minmax(250px, min(1fr, 25%)));
+    gap: 20px;
+    padding: 0 10px;
+    justify-items: center;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+    border: #39396a solid 2px;
+
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .contacto-form {

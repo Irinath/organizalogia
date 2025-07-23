@@ -46,8 +46,23 @@
     </div>
 
     <main>
-        <section class="libros-grid" id="libros">
+        <section class="libros-flexbox" id="libros">
             <h3>Libros Recomendados</h3>
+            <div class="item">
+                <img src="./images/products/atomics_habits.jpg" alt="Habitos atómicos" width="50">
+                <p class="precio">$27700</p>
+                <p class="oferta">15% off</p>
+                <p class="descripcion">Descripción Breve</p>
+                <button class="btn-libros">
+                    <span class="icono"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="texto-btn">Agregame</span>
+                </button>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
             <ul>
                 <li>
                     Producto 1 - $10000.-
@@ -67,8 +82,9 @@
             </ul>
         </section>
 
-        <section class="productos-grid" id="productos">
+        <section class="productos__grid" id="productos">
             <h3>Artículos de apoyo</h3>
+            <div id="productos__container"></div>
         </section>
 
         <!-- Carrito de Compras (Armar en otra hoja) -->
@@ -82,17 +98,17 @@
             <h4>Contactanos</h4>
             <form action="" method="post">
                 <!--form action="https://formspree.io/f/myzjrgbn" method="POST"-->
-                <label for="nombre">Nombres </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tus Nombres"> <br>
-                <label for="apellido">Apellidos </label>
-                <input type="text" name="apellido" id="apellido" placeholder="Escribe tus Apellidos"> <br>
-                <label for="telefono">Teléfono </label>
-                <input type="number" name="telefono" id="telefono" placeholder="1122334455"> <br>
-                <label for="mail">Email</label>
-                <input type="mail" name="mail" id="mail" placeholder="mail@mail.com"> <br>
-                <label for="mensaje">Escribinos </label>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+                <label for="apellido"> </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
+                <label for="telefono"> </label>
+                <input type="number" name="telefono" id="telefono" placeholder="1122334455"><br>
+                <label for="mail"></label>
+                <input type="mail" name="mail" id="mail" placeholder="mail@mail.com"><br>
+                <label for="mensaje"></label>
                 <textarea rows="6" name="escribenos" id="mensaje" placeholder="Mensaje o Comentarios"></textarea> <br>
-                <button type="submit" value="Save">Send</button>
+                <button type="submit" value="Save">Enviar</button>
             </form>
         </section>
         <aside class="aside">
