@@ -241,19 +241,24 @@ a:hover {
 
 .productos__container {
     display: grid;
-   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Limit columns to a maximum of 4 
-    grid-template-columns: repeat(auto-fit, minmax(250px, min(1fr, 25%)));*/
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    Limit columns to a maximum of 4*/
     grid-template-columns: repeat(3, minmax(250px, min(1fr, 25%)));
+    /*grid-auto-columns: repeat(3, 33%);
+    display: flex;
+    flex-wrap: wrap;*/
     gap: 20px;
     padding: 0 10px;
-    justify-items: center;
+    justify-items: stretch;
+    justify-content: center;
 }
 
 .card {
-    align-items: center;
+    /*align-items: center;
+    align-self: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
+    width: 300px; /*propiedad para flex - borrar en grid(?)*/
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
